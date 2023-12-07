@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title"><i>Survey Form</i></h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">
+      Name
+   <input type="text" required id="name" placeholder="Enter your name">
+  </label>
+
+  <label id="email-label" for="email">
+    Email
+ <input type="email" required id="email" placeholder="Enter your email">
+</label>
+<label id="number-label" for="number">
+  Age
+  <input pattern="[0-9]+" title="age should be a number" type="number" id="number" placeholder="Age" min="6" max="120">
+</label>
+
+<label for="experience">
+  What best describes your experience in programming?
+  <select id="dropdown">
+    <option disabled selected value="">Select an option</option>
+    <option value="beginner">Beginner</option>
+    <option value="intermediate">Intermediate</option>
+    <option value="advanced">Advanced</option>
+    <option value="expert">Expert</option>
+  </select>
+</label>
+<fieldset>
+  <legend>Did you like our certificate programs?</legend>
+  <label for="definitely">
+     <input type="radio" name="like" value="definitely"><span> Definitely </span> 
+  </label>
+  <label for="somewhat">
+     <input type="radio" name="like" value="somewhat"><span> Somewhat</span>
+  </label>
+  <label for="not at all">
+     <input type="radio" name="like" value="not at all"><span>  Not at all</span>
+  </label>
+</fieldset>
+ <hr />
+<fieldset id="favorite-course">
+  <legend>What is your favorite freecodecamp course?</legend>
+  <label for="responsive-web-design">
+  <input value="responsive-web-design" type="checkbox" id="responsive-web-design"> <span>Responsive Web Design</span>
+</label>
+<label for="javascript-algorithms-and-data-structures">
+  <input value="javascript-algorithms-and-data-structures" type="checkbox" id="javascript-algorithms-and-data-structures"> <span>JavaScript Algorithms and Data Structures</span>
+</label>
+<label for="front-end-development-libraries">
+  <input value="front-end-development-libraries" type="checkbox" id="front-end-development-libraries"> <span>Front End Development Libraries</span>
+</label>
+<label for="data-visualization">
+  <input value="data-visualization" type="checkbox" id="data-visualization"> <span>Data Visualization</span>
+</label>
+<label for="relational-database">
+  <input value="relational-database" type="checkbox" id="relational-database"> <span>Relational Database</span>
+</label>
+<label for="back-end-development-and-apis">
+  <input value="back-end-development-and-apis" type="checkbox" id="back-end-development-and-apis"> <span>Back End Development and APIs</span>
+</label>
+<label for="quality-assurance">
+  <input value="quality-assurance" type="checkbox" id="quality-assurance"> <span>Quality Assurance</span>
+</label>
+<p>Note: There are more courses</p>
+</fieldset>
+<label for="comments">
+  Any comments or suggestions?
+  <textarea  rows="9" cols="80"  name="comments" id="comments" placeholder="Additional comments"></textarea>
+</label>
+<button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
